@@ -5,16 +5,32 @@ Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz”.
 Come faccio a sapere se un numero è divisibile per un altro?
 Abbiamo visto qualcosa di particolare che possiamo usare? */
 
-const container = document.querySelector ('.x-container');
+// data
 const limit = 100;
 
+// logic
+
 for(let i = 1; i <= limit; i++){
-  const box = document.createElement ('div');  
-  box.className = 'box';  
+  if (i % 15 == 0){
+    console.log('fizzBuzz');
+  } else if (i % 5 == 0){
+    console.log('buzz');
+  } else if (i % 3 == 0){
+    console.log('fizz');
+  } else{
+    console.log(i);
+  }
+}
+// show
+
+/*
+const container = document.querySelector ('.x-container');
+
+
   
 
 
-  box.innerHTML = i;
 
-  container.append(box);
 }
+
+*/
